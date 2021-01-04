@@ -57,7 +57,6 @@ input[type=text], select, textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
   
-  /* Style the submit button with a specific background color etc */
   input[type=submit] {
     background-color: #6760cf;
     color: white;
@@ -68,16 +67,22 @@ input[type=text], select, textarea {
     margin: auto 500px
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
+
   input[type=submit]:hover {
     background-color: #3b3c8a;
   }
   
-  /* Add a background color and some padding around the form */
   .container {
     border-radius: 8px;
     background-color: rgb(211, 211, 211);
     padding: 20px;
-    margin: 50px auto;
+    margin: 40px auto;
     font-family: 'Nanum Gothic', sans-serif;
   }
+/* Portfolio Card Style */
+
+.portfolio-card{
+display:flex;
+justify-content: center;
+margin: 50px auto;
+}

@@ -35,19 +35,20 @@
   <div class="container">
     <form action="action_page.php">
   
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="firstname" placeholder="Your name..">
   
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="lastname" placeholder="Your last name..">
   
-      <label for="country">Who is your favorite original starting Pok&eacutemon?</label>
-      <select id="country" name="country">
-        <option value="australia">Bulbasaur</option>
-        <option value="canada">Charmander</option>
-        <option value="usa">Squirtle</option>
-        <option value="usa">Pikachu</option>
-        <option value="usa">Why is it always about Pok&eacutemon with you?</option>
+      <label for="pokemon">Who is your favorite original starting Pok&eacutemon?</label>
+      <select id="pokemon" name="pokemon">
+        <option value="" disabled selected>Choose a Pok&eacutemon</option>
+        <option value="bulbasaur">Bulbasaur</option>
+        <option value="charmander">Charmander</option>
+        <option value="squirtle">Squirtle</option>
+        <option value="pikachu">Pikachu</option>
+        <option value="wtf">Why is it always about Pok&eacutemon with you?</option>
       </select>
       <div>
         <label for="food">Do you like tacos or pizza?</label>
@@ -63,7 +64,8 @@
         <input type="checkbox" id="kittens" name="kittens">
         <label for="horns">Kittens</label>
       </div>
-      <label for="subject"><h4>Message</h4></label>
+      <br>
+      <label for="subject">Message</label>
       <textarea id="message" name="message" placeholder="Leave a message here" style="height:150px"></textarea>
   
       <input type="submit"  class="submit-button" value="Submit">
