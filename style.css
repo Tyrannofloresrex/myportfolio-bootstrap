@@ -79,6 +79,18 @@ input[type=text], select, textarea {
     margin: 40px auto;
     font-family: 'Nanum Gothic', sans-serif;
   }
+#img-col {
+  display:flex;
+  min-height:fit-content;
+  align-items: center;
+  border-radius: 8px;
+}
+#text-col{
+  align-self: flex-start;
+  min-height:fit-content;
+  border-radius: 8px;
+
+  }
 /* Portfolio Card Style */
 
 .portfolio-card{
