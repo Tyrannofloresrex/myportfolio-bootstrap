@@ -47,14 +47,13 @@ font-family: 'Amatic SC', cursive !important;
 
 /* Form style */
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 6px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; 
+    margin-bottom: 16px;
+    resize: vertical 
   }
   
   input[type=submit] {
@@ -73,10 +72,11 @@ input[type=text], select, textarea {
   }
   
   .container {
+    display: flex;
     border-radius: 8px;
     background-color: rgb(211, 211, 211);
     padding: 20px;
-    margin: 40px auto;
+    margin: auto;
     font-family: 'Nanum Gothic', sans-serif;
   }
 #img-col {
@@ -92,9 +92,20 @@ input[type=text], select, textarea {
 
   }
 /* Portfolio Card Style */
-
 .portfolio-card{
 display:flex;
 justify-content: center;
 margin: 50px auto;
+}
+
+/* Contact Styles */
+.linkdin{
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 8%;
+  background-color: rgb(37,162,183);
+  margin: 25px 610px;
+  border-radius: 20px
 }
