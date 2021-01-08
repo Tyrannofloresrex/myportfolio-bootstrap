@@ -6,6 +6,7 @@ body{
     background-image: url("https://thumbs.gfycat.com/AnimatedNeatAfricanelephant-size_restricted.gif");
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 100px;
 }
 .background {
     background-image: url("https://thumbs.gfycat.com/AnimatedNeatAfricanelephant-size_restricted.gif");
@@ -17,33 +18,41 @@ body{
     background-size: cover;
 }
 
-#fakeRex:hover{
-    content: url(Assets/IMG_3093.jpg)
-}
-
-p{
+p {
  font-family: 'Nanum Gothic', sans-serif;
+ text-size-adjust: auto;
 }
 
 .col {
-margin: 20px;
- padding:10px;
- background-color: lightgray;
- box-sizing:border-box
+  margin: 20px;
+  padding:10px;
+  box-sizing: border-box
 }
-
+/* Navbar Styles */
 .navbar-brand { 
     font-family: 'Amatic SC', cursive !important;
     font-size: 28px;
-     }
+ }
+
 #navbarNav {
-font-family: 'Amatic SC', cursive !important;
-font-size: 28px;
+  font-family: 'Amatic SC', cursive !important;
+  font-size: 28px;
 }
 .page-footer {
-font-family: 'Amatic SC', cursive !important;
-    font-size: 26px;
+  font-family: 'Amatic SC', cursive !important;
+  font-size: 26px;
 }
+.proLink{
+  margin-left: auto !important;
+}
+.linkdin{
+  width: 40px;
+  height: 40px;
+  /* background-color: rgb(37,162,183); */
+  padding: 15px;
+  border-radius: 8px;
+}
+
 
 /* Form style */
 input[type=text], select, textarea {
@@ -71,7 +80,7 @@ input[type=text], select, textarea {
     background-color: #3b3c8a;
   }
   
-  .container {
+  .formCon{
     display: flex;
     border-radius: 8px;
     background-color: rgb(211, 211, 211);
@@ -79,16 +88,26 @@ input[type=text], select, textarea {
     margin: auto;
     font-family: 'Nanum Gothic', sans-serif;
   }
+  /* Index Styles */
+.content-row {
+  width: fit-content;
+}
+
 #img-col {
-  display:flex;
-  min-height:fit-content;
+  flex-wrap: wrap;
+  height:fit-content;
   align-items: center;
   border-radius: 8px;
+  
+  
 }
 #text-col{
   align-self: flex-start;
-  min-height:fit-content;
-  border-radius: 8px;
+  height:fit-content;
+  flex-wrap:wrap;
+  border-width: 3px !important;
+  background-color: lightgray;
+  margin-bottom: 100px;
 
   }
 /* Portfolio Card Style */
@@ -98,14 +117,36 @@ justify-content: center;
 margin: 50px auto;
 }
 
-/* Contact Styles */
-.linkdin{
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 8%;
-  background-color: rgb(37,162,183);
-  margin: 25px 610px;
-  border-radius: 20px
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  width: fit-content;
+}
+.panelDisplay{
+  display:block
+}
+.accImg {
+  width: 25%;
+  height: 25%;
+}
+
+/* Contact Styles */
